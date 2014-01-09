@@ -2,12 +2,12 @@ import random
 
 class Board(object):
 
-	def __init__(self, row, col, mines):
-		# Generate board and place mines randomly
+	def __init__(self, rows, cols, mines):
+		'''Generate board and place mines randomly'''
 		pass
 
-	def printBoard(self):
-		# Brint string representation of the board
+	def __str__(self):
+		'''Print string representation of the board'''
 		pass
 
 	def placeMine(self):
@@ -16,23 +16,25 @@ class Board(object):
 	def placeFlag(self):
 		pass
 
-	class Cell(object):
-		def __init__(self):
-			#is_mine
-			#is_visible
-			#is_flag
-			pass
+class Cell(object):
+	def __init__(self, row, col, board):
+		#is_mine
+		#is_visible
+		#is_flag
+		pass
 
-		def generateNeighborList(self, row, col):
-			pass
+	def generateNeighborList(self):
+		neighborList = []
+		return neighborList
 
-		def countSurroundingMines(self):
-			pass
+	def countSurroundingMines(self):
+		'''Call neighborList on cell, iterate through list and generate mine count'''
+		pass
 
-		def cellDisplay(self):
-			# Shows what string element to display for the cell
-			#If visible, display count of surrounding mines
-			pass
+	def cellDisplay(self):
+		'''Shows what string element to display for the cell
+		If visible, display count of surrounding mines'''
+		pass
 
 
 
