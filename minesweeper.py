@@ -16,9 +16,6 @@ class Board(object):
 	def placeFlag(self):
 		pass
 
-	def __getitem__(self,(row,col)):
-		return self.cell[row][column]
-
 	class Cell(object):
 		def __init__(self):
 			#is_mine
